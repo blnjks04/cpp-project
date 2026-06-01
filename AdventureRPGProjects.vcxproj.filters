@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="소스 파일">
@@ -59,272 +59,272 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="Source\Main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
+    <ClCompile Include="Source\Game.cpp">
       <Filter>소스 파일\Core</Filter>
     </ClCompile>
-    <ClCompile Include="GameStateManager.cpp">
+    <ClCompile Include="Source\GameStateManager.cpp">
       <Filter>소스 파일\Core</Filter>
     </ClCompile>
-    <ClCompile Include="EventDispatcher.cpp">
+    <ClCompile Include="Source\EventDispatcher.cpp">
       <Filter>소스 파일\System</Filter>
     </ClCompile>
-    <ClCompile Include="AbilityComponent.cpp">
+    <ClCompile Include="Source\AbilityComponent.cpp">
       <Filter>소스 파일\GamePlay\Character\Component</Filter>
     </ClCompile>
-    <ClCompile Include="Component.cpp">
+    <ClCompile Include="Source\Component.cpp">
       <Filter>소스 파일\GamePlay\Character\Component</Filter>
     </ClCompile>
-    <ClCompile Include="StatusComponent.cpp">
+    <ClCompile Include="Source\StatusComponent.cpp">
       <Filter>소스 파일\GamePlay\Character\Component</Filter>
     </ClCompile>
-    <ClCompile Include="Character.cpp">
+    <ClCompile Include="Source\Character.cpp">
       <Filter>소스 파일\GamePlay\Character</Filter>
     </ClCompile>
-    <ClCompile Include="ButtonRenderer.cpp">
+    <ClCompile Include="Source\ButtonRenderer.cpp">
       <Filter>소스 파일\UI\Views</Filter>
     </ClCompile>
-    <ClCompile Include="ButtonFactory.cpp">
+    <ClCompile Include="Source\ButtonFactory.cpp">
       <Filter>소스 파일\UI\Views</Filter>
     </ClCompile>
-    <ClCompile Include="MainMenuButtons.cpp">
+    <ClCompile Include="Source\MainMenuButtons.cpp">
       <Filter>소스 파일\UI\Views</Filter>
     </ClCompile>
-    <ClCompile Include="RestButtons.cpp">
+    <ClCompile Include="Source\RestButtons.cpp">
       <Filter>소스 파일\UI\Views</Filter>
     </ClCompile>
-    <ClCompile Include="CombatButtons.cpp">
+    <ClCompile Include="Source\CombatButtons.cpp">
       <Filter>소스 파일\UI\Views</Filter>
     </ClCompile>
-    <ClCompile Include="BattleResultButtons.cpp">
+    <ClCompile Include="Source\BattleResultButtons.cpp">
       <Filter>소스 파일\UI\Views</Filter>
     </ClCompile>
-    <ClCompile Include="EventButtons.cpp">
+    <ClCompile Include="Source\EventButtons.cpp">
       <Filter>소스 파일\UI\Views</Filter>
     </ClCompile>
-    <ClCompile Include="BattleResultView.cpp">
+    <ClCompile Include="Source\BattleResultView.cpp">
       <Filter>소스 파일\UI\Views</Filter>
     </ClCompile>
-    <ClCompile Include="EnemyFSM.cpp">
+    <ClCompile Include="Source\EnemyFSM.cpp">
       <Filter>소스 파일\GamePlay\Character\Enemy\AI</Filter>
     </ClCompile>
-    <ClCompile Include="MapManager.cpp">
+    <ClCompile Include="Source\MapManager.cpp">
       <Filter>소스 파일\Map</Filter>
     </ClCompile>
-    <ClCompile Include="Map.cpp">
+    <ClCompile Include="Source\Map.cpp">
       <Filter>소스 파일\Map</Filter>
     </ClCompile>
-    <ClCompile Include="MapView.cpp">
+    <ClCompile Include="Source\MapView.cpp">
       <Filter>소스 파일\UI\Views</Filter>
     </ClCompile>
-    <ClCompile Include="CombatView.cpp">
+    <ClCompile Include="Source\CombatView.cpp">
       <Filter>소스 파일\UI\Views</Filter>
     </ClCompile>
-    <ClCompile Include="Logger.cpp">
+    <ClCompile Include="Source\Logger.cpp">
       <Filter>소스 파일\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="CharacterView.cpp">
+    <ClCompile Include="Source\CharacterView.cpp">
       <Filter>소스 파일\UI\Views</Filter>
     </ClCompile>
-    <ClCompile Include="CombatManager.cpp">
+    <ClCompile Include="Source\CombatManager.cpp">
       <Filter>소스 파일\GamePlay\Combat</Filter>
     </ClCompile>
-    <ClCompile Include="PlayerTurnController.cpp">
+    <ClCompile Include="Source\PlayerTurnController.cpp">
       <Filter>소스 파일\GamePlay\Combat</Filter>
     </ClCompile>
-    <ClCompile Include="EnemyTurnController.cpp">
+    <ClCompile Include="Source\EnemyTurnController.cpp">
       <Filter>소스 파일\GamePlay\Combat</Filter>
     </ClCompile>
-    <ClCompile Include="BattleResultController.cpp">
+    <ClCompile Include="Source\BattleResultController.cpp">
       <Filter>소스 파일\GamePlay\Combat</Filter>
     </ClCompile>
-    <ClCompile Include="BattleRewardController.cpp">
+    <ClCompile Include="Source\BattleRewardController.cpp">
       <Filter>소스 파일\GamePlay\Combat</Filter>
     </ClCompile>
-    <ClCompile Include="CombatRuleEffect.cpp">
+    <ClCompile Include="Source\CombatRuleEffect.cpp">
       <Filter>소스 파일\GamePlay\Combat</Filter>
     </ClCompile>
-    <ClCompile Include="BossPhase2RuleEffect.cpp">
+    <ClCompile Include="Source\BossPhase2RuleEffect.cpp">
       <Filter>소스 파일\GamePlay\Combat</Filter>
     </ClCompile>
-    <ClCompile Include="EnemyManager.cpp">
+    <ClCompile Include="Source\EnemyManager.cpp">
       <Filter>소스 파일\GamePlay\Character\Enemy\AI</Filter>
     </ClCompile>
-    <ClCompile Include="EventStageManager.cpp">
+    <ClCompile Include="Source\EventStageManager.cpp">
       <Filter>소스 파일\GamePlay\EventStage</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
+    <ClCompile Include="Source\Player.cpp">
       <Filter>소스 파일\GamePlay\Character\Player</Filter>
     </ClCompile>
-    <ClCompile Include="BossEnemy.cpp">
+    <ClCompile Include="Source\BossEnemy.cpp">
       <Filter>소스 파일\GamePlay\Character\Enemy</Filter>
     </ClCompile>
-    <ClCompile Include="Enemy.cpp">
+    <ClCompile Include="Source\Enemy.cpp">
       <Filter>소스 파일\GamePlay\Character\Enemy</Filter>
     </ClCompile>
-    <ClCompile Include="GameDataManager.cpp">
+    <ClCompile Include="Source\GameDataManager.cpp">
       <Filter>소스 파일\System</Filter>
     </ClCompile>
-    <ClCompile Include="MainMenu.cpp">
+    <ClCompile Include="Source\MainMenu.cpp">
       <Filter>소스 파일\UI\Views</Filter>
     </ClCompile>
-    <ClCompile Include="PokerCard.cpp">
+    <ClCompile Include="Source\PokerCard.cpp">
       <Filter>소스 파일\GamePlay</Filter>
     </ClCompile>
-    <ClCompile Include="ConsoleFramework.cpp">
+    <ClCompile Include="Source\ConsoleFramework.cpp">
       <Filter>소스 파일\System</Filter>
     </ClCompile>
-    <ClCompile Include="UIManager.cpp">
+    <ClCompile Include="Source\UIManager.cpp">
       <Filter>소스 파일\UI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h">
+    <ClInclude Include="Source\Game.h">
       <Filter>소스 파일\Core</Filter>
     </ClInclude>
-    <ClInclude Include="GameStateManager.h">
+    <ClInclude Include="Source\GameStateManager.h">
       <Filter>소스 파일\Core</Filter>
     </ClInclude>
-    <ClInclude Include="EventDispatcher.h">
+    <ClInclude Include="Source\EventDispatcher.h">
       <Filter>소스 파일\System</Filter>
     </ClInclude>
-    <ClInclude Include="Utils.h">
+    <ClInclude Include="Source\Utils.h">
       <Filter>소스 파일\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="AbilityComponent.h">
+    <ClInclude Include="Source\AbilityComponent.h">
       <Filter>소스 파일\GamePlay\Character\Component</Filter>
     </ClInclude>
-    <ClInclude Include="Component.h">
+    <ClInclude Include="Source\Component.h">
       <Filter>소스 파일\GamePlay\Character\Component</Filter>
     </ClInclude>
-    <ClInclude Include="StatusComponent.h">
+    <ClInclude Include="Source\StatusComponent.h">
       <Filter>소스 파일\GamePlay\Character\Component</Filter>
     </ClInclude>
-    <ClInclude Include="Character.h">
+    <ClInclude Include="Source\Character.h">
       <Filter>소스 파일\GamePlay\Character</Filter>
     </ClInclude>
-    <ClInclude Include="Button.h">
+    <ClInclude Include="Source\Button.h">
       <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
-    <ClInclude Include="ButtonFactory.h">
+    <ClInclude Include="Source\ButtonFactory.h">
       <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
-    <ClInclude Include="ButtonRenderer.h">
+    <ClInclude Include="Source\ButtonRenderer.h">
       <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
-    <ClInclude Include="View.h">
+    <ClInclude Include="Source\View.h">
       <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
-    <ClInclude Include="MainMenuButtons.h">
+    <ClInclude Include="Source\MainMenuButtons.h">
       <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
-    <ClInclude Include="RestButtons.h">
+    <ClInclude Include="Source\RestButtons.h">
       <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
-    <ClInclude Include="CombatButtons.h">
+    <ClInclude Include="Source\CombatButtons.h">
       <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
-    <ClInclude Include="BattleResultButtons.h">
+    <ClInclude Include="Source\BattleResultButtons.h">
       <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
-    <ClInclude Include="EventButtons.h">
+    <ClInclude Include="Source\EventButtons.h">
       <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
-    <ClInclude Include="BattleResultView.h">
+    <ClInclude Include="Source\BattleResultView.h">
       <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
-    <ClInclude Include="BattleRewardOption.h">
+    <ClInclude Include="Source\BattleRewardOption.h">
       <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
-    <ClInclude Include="EnemyFSM.h">
+    <ClInclude Include="Source\EnemyFSM.h">
       <Filter>소스 파일\GamePlay\Character\Enemy\AI</Filter>
     </ClInclude>
-    <ClInclude Include="Logger.h">
+    <ClInclude Include="Source\Logger.h">
       <Filter>소스 파일\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="MapManager.h">
+    <ClInclude Include="Source\MapManager.h">
       <Filter>소스 파일\Map</Filter>
     </ClInclude>
-    <ClInclude Include="Node.h">
+    <ClInclude Include="Source\Node.h">
       <Filter>소스 파일\Map</Filter>
     </ClInclude>
-    <ClInclude Include="MapView.h">
+    <ClInclude Include="Source\MapView.h">
       <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
-    <ClInclude Include="CombatView.h">
+    <ClInclude Include="Source\CombatView.h">
       <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
-    <ClInclude Include="CharacterView.h">
+    <ClInclude Include="Source\CharacterView.h">
       <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
-    <ClInclude Include="CombatManager.h">
+    <ClInclude Include="Source\CombatManager.h">
       <Filter>소스 파일\GamePlay\Combat</Filter>
     </ClInclude>
-    <ClInclude Include="CombatContext.h">
+    <ClInclude Include="Source\CombatContext.h">
       <Filter>소스 파일\GamePlay\Combat</Filter>
     </ClInclude>
-    <ClInclude Include="PlayerTurnController.h">
+    <ClInclude Include="Source\PlayerTurnController.h">
       <Filter>소스 파일\GamePlay\Combat</Filter>
     </ClInclude>
-    <ClInclude Include="EnemyTurnController.h">
+    <ClInclude Include="Source\EnemyTurnController.h">
       <Filter>소스 파일\GamePlay\Combat</Filter>
     </ClInclude>
-    <ClInclude Include="BattleResultController.h">
+    <ClInclude Include="Source\BattleResultController.h">
       <Filter>소스 파일\GamePlay\Combat</Filter>
     </ClInclude>
-    <ClInclude Include="BattleRewardController.h">
+    <ClInclude Include="Source\BattleRewardController.h">
       <Filter>소스 파일\GamePlay\Combat</Filter>
     </ClInclude>
-    <ClInclude Include="CombatRuleEffect.h">
+    <ClInclude Include="Source\CombatRuleEffect.h">
       <Filter>소스 파일\GamePlay\Combat</Filter>
     </ClInclude>
-    <ClInclude Include="BossPhase2RuleEffect.h">
+    <ClInclude Include="Source\BossPhase2RuleEffect.h">
       <Filter>소스 파일\GamePlay\Combat</Filter>
     </ClInclude>
-    <ClInclude Include="EnemyManager.h">
+    <ClInclude Include="Source\EnemyManager.h">
       <Filter>소스 파일\GamePlay\Character\Enemy\AI</Filter>
     </ClInclude>
-    <ClInclude Include="json.hpp">
+    <ClInclude Include="Source\json.hpp">
       <Filter>소스 파일\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="EventStageManager.h">
+    <ClInclude Include="Source\EventStageManager.h">
       <Filter>소스 파일\GamePlay\EventStage</Filter>
     </ClInclude>
-    <ClInclude Include="EventStage.h">
+    <ClInclude Include="Source\EventStage.h">
       <Filter>소스 파일\GamePlay\EventStage</Filter>
     </ClInclude>
-    <ClInclude Include="Instance.h">
+    <ClInclude Include="Source\Instance.h">
       <Filter>소스 파일\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="Player.h">
+    <ClInclude Include="Source\Player.h">
       <Filter>소스 파일\GamePlay\Character\Player</Filter>
     </ClInclude>
-    <ClInclude Include="BossEnemy.h">
+    <ClInclude Include="Source\BossEnemy.h">
       <Filter>소스 파일\GamePlay\Character\Enemy</Filter>
     </ClInclude>
-    <ClInclude Include="Enemy.h">
+    <ClInclude Include="Source\Enemy.h">
       <Filter>소스 파일\GamePlay\Character\Enemy</Filter>
     </ClInclude>
-    <ClInclude Include="GameDataManager.h">
+    <ClInclude Include="Source\GameDataManager.h">
       <Filter>소스 파일\System</Filter>
     </ClInclude>
-    <ClInclude Include="MainMenu.h">
+    <ClInclude Include="Source\MainMenu.h">
       <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
-    <ClInclude Include="PokerCard.h">
+    <ClInclude Include="Source\PokerCard.h">
       <Filter>소스 파일\GamePlay</Filter>
     </ClInclude>
-    <ClInclude Include="ConsoleFramework.h">
+    <ClInclude Include="Source\ConsoleFramework.h">
       <Filter>소스 파일\System</Filter>
     </ClInclude>
-    <ClInclude Include="UIManager.h">
+    <ClInclude Include="Source\UIManager.h">
       <Filter>소스 파일\UI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Map.h">
+    <None Include="Source\Map.h">
       <Filter>소스 파일\Map</Filter>
     </None>
     <None Include="DB_Enemy.json">
