@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Core">
+      <UniqueIdentifier>{1ef0fee5-24c9-4277-8e8c-51cdd0397d1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\GamePlay">
+      <UniqueIdentifier>{84c5da02-bba1-444a-b591-a5f4347cecf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Map">
+      <UniqueIdentifier>{ac3a26bc-f039-4da9-92d7-aaa91e442c88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\System">
+      <UniqueIdentifier>{7e52d0d3-bbcc-449a-8eea-3bd0a374d39e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Utils">
+      <UniqueIdentifier>{fe43d19f-6c9b-4839-b497-287c520a6c92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{06e21825-29e1-470f-a447-c3a30d056c35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\GamePlay\Character">
+      <UniqueIdentifier>{a90b7764-cc1e-4208-8660-e766fc19d704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\GamePlay\Character\Component">
+      <UniqueIdentifier>{97dbe89c-1295-49bd-aaec-ecf1f90bc4b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\GamePlay\Combat">
+      <UniqueIdentifier>{c9b14e81-3f9d-40c8-8b45-2335b3b74a98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DB_Json">
+      <UniqueIdentifier>{81a5d0a1-8565-437a-9a21-11b9008ca1f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\GamePlay\EventStage">
+      <UniqueIdentifier>{b16a40e2-9e20-40a5-8aee-41e88c06e408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\GamePlay\Character\Player">
+      <UniqueIdentifier>{0cecad35-9233-4931-a32b-40b7f9f4dbc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\GamePlay\Character\Enemy">
+      <UniqueIdentifier>{c615b702-cc89-42d4-8a37-561f05b2a239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\GamePlay\Character\Enemy\AI">
+      <UniqueIdentifier>{6efbb63e-a600-45f0-8d89-ce3430d6adcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\UI">
+      <UniqueIdentifier>{87fc3a3f-a95c-4131-9a21-5477f5a3c926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\UI\Views">
+      <UniqueIdentifier>{30168624-6c0f-4d6e-a0fc-58216216337c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateManager.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="EventDispatcher.cpp">
+      <Filter>소스 파일\System</Filter>
+    </ClCompile>
+    <ClCompile Include="AbilityComponent.cpp">
+      <Filter>소스 파일\GamePlay\Character\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>소스 파일\GamePlay\Character\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusComponent.cpp">
+      <Filter>소스 파일\GamePlay\Character\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>소스 파일\GamePlay\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonRenderer.cpp">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonFactory.cpp">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuButtons.cpp">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="RestButtons.cpp">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="CombatButtons.cpp">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleResultButtons.cpp">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="EventButtons.cpp">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleResultView.cpp">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyFSM.cpp">
+      <Filter>소스 파일\GamePlay\Character\Enemy\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="MapManager.cpp">
+      <Filter>소스 파일\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>소스 파일\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="MapView.cpp">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="CombatView.cpp">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>소스 파일\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterView.cpp">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="CombatManager.cpp">
+      <Filter>소스 파일\GamePlay\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerTurnController.cpp">
+      <Filter>소스 파일\GamePlay\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyTurnController.cpp">
+      <Filter>소스 파일\GamePlay\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleResultController.cpp">
+      <Filter>소스 파일\GamePlay\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleRewardController.cpp">
+      <Filter>소스 파일\GamePlay\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="CombatRuleEffect.cpp">
+      <Filter>소스 파일\GamePlay\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="BossPhase2RuleEffect.cpp">
+      <Filter>소스 파일\GamePlay\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyManager.cpp">
+      <Filter>소스 파일\GamePlay\Character\Enemy\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="EventStageManager.cpp">
+      <Filter>소스 파일\GamePlay\EventStage</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>소스 파일\GamePlay\Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="BossEnemy.cpp">
+      <Filter>소스 파일\GamePlay\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>소스 파일\GamePlay\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="GameDataManager.cpp">
+      <Filter>소스 파일\System</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="PokerCard.cpp">
+      <Filter>소스 파일\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleFramework.cpp">
+      <Filter>소스 파일\System</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>소스 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateManager.h">
+      <Filter>소스 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="EventDispatcher.h">
+      <Filter>소스 파일\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>소스 파일\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="AbilityComponent.h">
+      <Filter>소스 파일\GamePlay\Character\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>소스 파일\GamePlay\Character\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusComponent.h">
+      <Filter>소스 파일\GamePlay\Character\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>소스 파일\GamePlay\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonFactory.h">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonRenderer.h">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="View.h">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenuButtons.h">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="RestButtons.h">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="CombatButtons.h">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleResultButtons.h">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="EventButtons.h">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleResultView.h">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleRewardOption.h">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyFSM.h">
+      <Filter>소스 파일\GamePlay\Character\Enemy\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>소스 파일\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MapManager.h">
+      <Filter>소스 파일\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>소스 파일\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="MapView.h">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="CombatView.h">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterView.h">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="CombatManager.h">
+      <Filter>소스 파일\GamePlay\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="CombatContext.h">
+      <Filter>소스 파일\GamePlay\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerTurnController.h">
+      <Filter>소스 파일\GamePlay\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyTurnController.h">
+      <Filter>소스 파일\GamePlay\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleResultController.h">
+      <Filter>소스 파일\GamePlay\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleRewardController.h">
+      <Filter>소스 파일\GamePlay\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="CombatRuleEffect.h">
+      <Filter>소스 파일\GamePlay\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="BossPhase2RuleEffect.h">
+      <Filter>소스 파일\GamePlay\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyManager.h">
+      <Filter>소스 파일\GamePlay\Character\Enemy\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>소스 파일\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="EventStageManager.h">
+      <Filter>소스 파일\GamePlay\EventStage</Filter>
+    </ClInclude>
+    <ClInclude Include="EventStage.h">
+      <Filter>소스 파일\GamePlay\EventStage</Filter>
+    </ClInclude>
+    <ClInclude Include="Instance.h">
+      <Filter>소스 파일\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>소스 파일\GamePlay\Character\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="BossEnemy.h">
+      <Filter>소스 파일\GamePlay\Character\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>소스 파일\GamePlay\Character\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataManager.h">
+      <Filter>소스 파일\System</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="PokerCard.h">
+      <Filter>소스 파일\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleFramework.h">
+      <Filter>소스 파일\System</Filter>
+    </ClInclude>
+    <ClInclude Include="UIManager.h">
+      <Filter>소스 파일\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Map.h">
+      <Filter>소스 파일\Map</Filter>
+    </None>
+    <None Include="DB_Enemy.json">
+      <Filter>DB_Json</Filter>
+    </None>
+    <None Include="DB_GameSaveData.json">
+      <Filter>DB_Json</Filter>
+    </None>
+    <None Include="DB_Items.json">
+      <Filter>DB_Json</Filter>
+    </None>
+    <None Include="DB_Player.json">
+      <Filter>DB_Json</Filter>
+    </None>
+    <None Include="DB_EventStage.json">
+      <Filter>DB_Json</Filter>
+    </None>
+  </ItemGroup>
+</Project>

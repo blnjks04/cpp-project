@@ -1,0 +1,25 @@
+# Visual Studio 개인 설정 파일은 사용자마다 달라서 제외합니다.
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# C++ 빌드 결과물은 다시 생성 가능하므로 Git에서 제외합니다.
+x64/
+Debug/
+Release/
+CodexBuild/
+Dist/
+*.obj
+*.pdb
+*.ilk
+*.exe
+*.dll
+
+# 실행 중 생성되는 로그 파일은 저장소에 포함하지 않습니다.
+*.log
+game_log.txt
+
+# 임시 파일은 커밋 대상에서 제외합니다.
+*.tmp

@@ -1,0 +1,18 @@
+[
+  {
+    "attack": 8,
+    "currentHp": 60,
+    "gold": 0,
+    "hp": 60,
+    "level": 1,
+    "name": "player",
+    "sprite": [
+      "   [T]",
+      " / [_]\\",
+      "   / \\"
+    ],
+    "weaponSprite": [
+      "--o == = >"
+    ]
+  }
+]
