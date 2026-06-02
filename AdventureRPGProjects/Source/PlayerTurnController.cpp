@@ -65,11 +65,11 @@ void PlayerTurnController::DrawPhase(CombatContext& context, CombatView& view)
         if (TryEscape(context, view, click)) break;
         if (IsClickedHandConfirm(click)) break;
 
-        PRINT_TEXT(8, 16, context.message, "yellow");
+        view.DisplayMessage(context.message);
         click = GET_MOUSE_CLICK();
     }
 
-    PRINT_TEXT(8, 16, "                                                                                                                ", "yellow");
+    view.ClearMessageBuffer();
     view.DisplayCards(context.hand, context.handResult, true);
     view.DisplayFixedButton(context.hand, context.fixedCards);
 }
@@ -140,13 +140,13 @@ void PlayerTurnController::RerollPhase(CombatContext& context, CombatView& view)
         }
 
         view.DisplayFixedButton(context.hand, context.fixedCards);
-        PRINT_TEXT(8, 16, context.message, "yellow");
+        view.DisplayMessage(context.message);
     }
 
     if (!context.bIsBattle) return;
 
     context.player->SetActionPoint(context.handResult.actionPoint);
-    PRINT_TEXT(8, 16, std::format("[ 족보 결정 성공 ! ] : 행동력 {} 획득 !                                                   ", context.handResult.actionPoint), "yellow");
+    view.DisplayMessage(std::format("[ 족보 결정 성공 ! ] : 행동력 {} 획득 !", context.handResult.actionPoint));
     view.DisplayCards(context.hand, context.handResult, true);
     view.DisplayBattleInfo(context.player, context.enemies, context.handResult, true);
 
@@ -209,7 +209,7 @@ void PlayerTurnController::ActionPhase(CombatContext& context, CombatView& view)
 
                     if (IsDiedAllEnemy(context.enemies))
                     {
-                        PRINT_TEXT(8, 16, "모든 적을 처치했습니다. 아무 곳이나 클릭시 전투 결과가 정산됩니다.                              ", "yellow");
+                        view.DisplayMessage("모든 적을 처치했습니다. 아무 곳이나 클릭시 전투 결과가 정산됩니다.");
                         GET_MOUSE_CLICK();
                         context.bIsBattle = false;
                         context.bIsVictory = true;
@@ -222,20 +222,17 @@ void PlayerTurnController::ActionPhase(CombatContext& context, CombatView& view)
             else if (IsClickedBlock(click))
             {
                 context.player->GainBlock(3 + context.handResult.bonusBlock);
-                PRINT_TEXT(8, 16, "                                                                                                                ");
-                PRINT_TEXT(8, 16, std::format("{} 방어막 획득 !    ", context.player->Status->GetBlock()), "yellow");
+                view.DisplayMessage(std::format("{} 방어막 획득 !    ", context.player->Status->GetBlock()));
                 context.player->SetActionPoint(context.player->GetActionPoint() - 1);
             }
             else
             {
-                PRINT_TEXT(8, 16, "                                                                                                                ");
-                PRINT_TEXT(8, 16, "[ 공격 ] / [ 방어 ] / [ 탈출 ] / [ 턴 종료 ] 버튼을 선택하세요. ", "yellow");
+                view.DisplayMessage("[ 공격 ] / [ 방어 ] / [ 탈출 ] / [ 턴 종료 ] 버튼을 선택하세요. ");
             }
         }
         else
         {
-            PRINT_TEXT(8, 16, "                                                                                                                ");
-            PRINT_TEXT(8, 16, "행동력이 부족합니다. [ 턴 종료 ] 버튼을 선택하세요.", "yellow");
+            view.DisplayMessage("행동력이 부족합니다. [ 턴 종료 ] 버튼을 선택하세요.");
         }
 
         if (IsClickedTurnEnd(click))

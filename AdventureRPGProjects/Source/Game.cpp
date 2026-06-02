@@ -51,7 +51,6 @@ void Game::Update()
 		}
 		click = GET_MOUSE_CLICK();
 		SET_PREVIOUS_STATE(CURRENT_STATE());
-        // 메인 메뉴 버튼 판정은 메인 메뉴 전용 버튼 정의를 사용한다.
 		if (ButtonRenderer::IsClicked(MainMenuButtons::Start(), click))
 		{
 			CHANGE_STATE(GameState::MAP);
@@ -83,7 +82,6 @@ void Game::Update()
         }
         else if (MapManager::GetInstance()->IsClickedPlayerInfoBox(click))
         {
-            // 플레이어 정보 박스 클릭 시 저장된 JSON을 다시 읽어 현재 플레이어와 맵 UI를 갱신한다.
             if (GameDataManager::GetInstance()->LoadPlayerData("DB_Player.json"))
             {
                 PlayerData* loadedPlayerData = GameDataManager::GetInstance()->GetPlayerData(player->GetName());

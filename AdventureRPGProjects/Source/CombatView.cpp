@@ -150,3 +150,9 @@ void CombatView::ClearMessageBuffer()
 {
     PRINT_TEXT(8, 16, std::format("{:<90}", ""));
 }
+
+void CombatView::DisplayMessage(const std::string& message, const std::string& color)
+{
+    ClearMessageBuffer();
+    PRINT_TEXT(8, 16, message, color);
+}

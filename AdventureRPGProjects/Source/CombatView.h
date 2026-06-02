@@ -25,4 +25,5 @@ public:
     void DisplayEnemyDiedAnim(Enemy* enemy);
     void DisplaySprite(int x, int y, const std::vector<std::string>& sprite, const std::string& color = "white");
     void ClearMessageBuffer();
+    void DisplayMessage(const std::string& message, const std::string& color = "yellow");
 };

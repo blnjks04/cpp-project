@@ -25,7 +25,7 @@ void EnemyTurnController::StartTurn(CombatContext& context, CombatView& view)
     view.DisplayBattleInfo(context.player, context.enemies, context.handResult, false);
     if (IsDiedAllEnemy(context.enemies))
     {
-        PRINT_TEXT(8, 16, "모든 적을 처치했습니다. 아무 곳이나 클릭시 전투 결과가 정산됩니다.                              ", "yellow");
+        view.DisplayMessage("모든 적을 처치했습니다. 아무 곳이나 클릭시 전투 결과가 정산됩니다.");
         GET_MOUSE_CLICK();
         context.bIsBattle = false;
         context.bIsVictory = true;
@@ -44,8 +44,7 @@ void EnemyTurnController::StartTurn(CombatContext& context, CombatView& view)
         if (enemy == nullptr || !enemy->Status->IsAlive()) continue;
 
         enemy->ExecuteFSM(context.player);
-        view.ClearMessageBuffer();
-        PRINT_TEXT(8, 16, std::format("{} 플레이어 남은 체력 : {}", enemy->GetLastActionMessage(), context.player->Status->GetCurrentHp()), "yellow");
+        view.DisplayMessage(std::format("{} 플레이어 남은 체력 : {}", enemy->GetLastActionMessage(), context.player->Status->GetCurrentHp()));
         std::this_thread::sleep_for(std::chrono::milliseconds(3000));
 
         if (!context.player->Status->IsAlive())
@@ -57,7 +56,7 @@ void EnemyTurnController::StartTurn(CombatContext& context, CombatView& view)
         }
     }
 
-    PRINT_TEXT(8, 16, "아무 곳이나 클릭시 다음 턴을 진행합니다.                                                                     ", "yellow");
+    view.DisplayMessage("아무 곳이나 클릭시 다음 턴을 진행합니다.");
     GET_MOUSE_CLICK();
     view.ClearMessageBuffer();
 }
