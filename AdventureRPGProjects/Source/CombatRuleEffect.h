@@ -14,3 +14,4 @@ public:
     virtual void OnEnemyTurnStart(CombatContext& context) {};
     virtual std::string GetLastMessage() const;
 };
+

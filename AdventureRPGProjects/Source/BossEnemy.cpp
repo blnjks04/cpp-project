@@ -2,7 +2,7 @@
 #include "EventDispatcher.h"
 #include "Logger.h"
 #include "Player.h"
-
+#include "GameDataManager.h"
 
 bool BossEnemy::IsPhase2() const
 {
@@ -151,8 +151,18 @@ std::string BossEnemy::ResolveGiftPenalty(PokerHandRank playerRank, Player* play
 void BossEnemy::EnterPhase2()
 {
     bIsPhase2 = true;
-    SetBaseDamage(GetBaseDamage() + 6);
     Status->SetBlock(Status->GetBlock() + 35);
+    
+    EnemyData* phase2Boss = GameDataManager::GetInstance()->GetEnemyData(EnemyRank::BOSS, "JokerCard");
+    if (phase2Boss != nullptr)
+    {
+        Status->SetMaxHp(phase2Boss->hp);
+        Status->SetCurrentHp(Status->GetMaxHp());
+        SetBaseDamage(phase2Boss->attack);
+        SetSprite(phase2Boss->sprite);
+        SetAnimSprite(phase2Boss->animSprite);
+    }
+    
     nextPhase2Skill = BossPhase2Skill::NONE;
 
     SetLastActionMessage(std::format("{}가 [색을 되찾은 광대]로 변신했습니다. 공격력과 방어막이 증가합니다.", GetName()));

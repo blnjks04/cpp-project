@@ -179,6 +179,9 @@
     <ClCompile Include="Source\UIManager.cpp">
       <Filter>소스 파일\UI</Filter>
     </ClCompile>
+    <ClCompile Include="Source\PlayerInfoView.cpp">
+      <Filter>소스 파일\UI\Views</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Game.h">
@@ -321,6 +324,9 @@
     </ClInclude>
     <ClInclude Include="Source\UIManager.h">
       <Filter>소스 파일\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PlayerInfoView.h">
+      <Filter>소스 파일\UI\Views</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

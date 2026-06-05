@@ -12,6 +12,7 @@
 #include "Player.h"
 #include "ButtonRenderer.h"
 #include "MainMenuButtons.h"
+#include "PlayerInfoView.h"
 
 
 Game::~Game()
@@ -89,6 +90,10 @@ void Game::Update()
                 {
                     player->ApplyData(*loadedPlayerData);
                     CLEAR_SCREEN();
+                    PlayerInfoView playerInfoView;
+                    playerInfoView.DisplayPlayerInfo(player.get());
+                    GET_MOUSE_CLICK();
+                    CLEAR_SCREEN();
                     MapManager::GetInstance()->DisplayMap();
                 }
             }
@@ -101,7 +106,7 @@ void Game::Update()
             CLEAR_SCREEN();
             SET_PREVIOUS_STATE(CURRENT_STATE());
             eventStageManager.StartEvent(player.get());
-		}
+        }
 		break;
 	case GameState::REST:
         if (PREVIOUS_STATE() != GameState::REST)

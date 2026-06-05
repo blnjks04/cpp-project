@@ -24,10 +24,8 @@ Player::Player(const std::string& name) : Character(name)
 
     Status->SetBlock(0);
     PlayerData* playerData = GameDataManager::GetInstance()->GetPlayerData(name);
-    if (playerData != nullptr)
-    {
-        ApplyData(*playerData);
-    }
+    sprite = playerData->sprite;
+    weaponSprite = playerData->weaponSprite;
 }
 
 Player::~Player()

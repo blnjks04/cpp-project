@@ -129,6 +129,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\PlayerInfoView.cpp" />
     <ClCompile Include="Source\AbilityComponent.cpp" />
     <ClCompile Include="Source\BattleResultController.cpp" />
     <ClCompile Include="Source\BattleResultButtons.cpp" />
@@ -171,6 +172,7 @@
     <ClCompile Include="Source\UIManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\PlayerInfoView.h" />
     <ClInclude Include="Source\AbilityComponent.h" />
     <ClInclude Include="Source\BattleResultController.h" />
     <ClInclude Include="Source\BattleResultButtons.h" />

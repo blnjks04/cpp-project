@@ -12,7 +12,7 @@ class Player : public Character
 {
 private:
 	int level = 1;
-	int baseDamage = 8;
+	int baseDamage = 80;
 	int rerolls = 3;
     int currentBlock = 0;
 	int gold = 0;

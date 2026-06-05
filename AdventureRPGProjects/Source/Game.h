@@ -21,7 +21,6 @@ public:
 	Game() = default;
 	~Game();
 
-    // Game이 플레이어를 단독 소유하므로 unique_ptr로 자동 정리한다.
     std::unique_ptr<Player> player;
 	// char currentKey;
     MouseClick click = { 0, 0 };
